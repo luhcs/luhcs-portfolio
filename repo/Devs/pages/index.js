@@ -12,7 +12,7 @@ const Page = () => {
 			p={3} 
 			mb={6} 
 			align="center">
-				<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js">Olá, seja bem vindo ao meu portfolio! :)</script>
+				Olá, seja bem vindo ao meu portfolio! :)
 			</Box>
 
 			<Box display={{ md: 'flex' }}>
