@@ -17,6 +17,7 @@ import {
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
 import { IoLogoGithub } from 'react-icons/io5'
+import Langmenu from './langmenu'
 
 const LinkItem = ({ href, path, _target, children, ...props }) => {
     const active = path === href
@@ -78,48 +79,49 @@ const Navbar = props => {
                         Publicações
                     </LinkItem>
                     <LinkItem
-                    _target="blank"
-                    href="https://github.com/luhcs/luhcs-homepage"
-                    path={path}
-                    display="inline-flex"
-                    alignItems="center"
-                    style={{ gap:4 }}
-                    pl={2}
+                        _target="blank"
+                        href="https://github.com/luhcs/luhcs-homepage"
+                        path={path}
+                        display="inline-flex"
+                        alignItems="center"
+                        style={{ gap: 4 }}
+                        pl={2}
                     >
-                    <IoLogoGithub />
-                    Source
+                        <IoLogoGithub />
+                        Source
                     </LinkItem>
+
                 </Stack>
 
-                <Box flex={1} align="right">
+                <Box flex={1} align="right" base='inline-block' >
                     <ThemeToggleButton />
-
+                    <Langmenu />
                     <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
-                    <Menu isLazy id="navbar-menu">
-                        <MenuButton
-                            as={IconButton}
-                            icon={<HamburgerIcon />}
-                            variant="outline"
-                            aria-label="Options"
-                        />
-                        <MenuList>
-                            <NextLink href="/" passHref>
-                                <MenuItem as={Link}>Sobre Mim</MenuItem>
-                            </NextLink>
-                            <NextLink href="/trabalhos" passHref>
-                                <MenuItem as={Link}>Trabalhos</MenuItem>
-                            </NextLink>
-                            <NextLink href="/publicacoes" passHref>
-                                <MenuItem as={Link}>Publicações</MenuItem>
-                            </NextLink>
-                            <MenuItem
-                                as={Link}
-                                href="https://github.com/luhcs/luhcs-homepage"
-                            >
-                                View Source
-                            </MenuItem>
-                        </MenuList>
-                    </Menu>
+                        <Menu isLazy id="navbar-menu">
+                            <MenuButton
+                                as={IconButton}
+                                icon={<HamburgerIcon />}
+                                variant="outline"
+                                aria-label="Options"
+                            />
+                            <MenuList>
+                                <NextLink href="/" passHref>
+                                    <MenuItem as={Link}>Sobre Mim</MenuItem>
+                                </NextLink>
+                                <NextLink href="/trabalhos" passHref>
+                                    <MenuItem as={Link}>Trabalhos</MenuItem>
+                                </NextLink>
+                                <NextLink href="/publicacoes" passHref>
+                                    <MenuItem as={Link}>Publicações</MenuItem>
+                                </NextLink>
+                                <MenuItem
+                                    as={Link}
+                                    href="https://github.com/luhcs/luhcs-homepage"
+                                >
+                                    View Source
+                                </MenuItem>
+                            </MenuList>
+                        </Menu>
                     </Box>
                 </Box>
             </Container>
