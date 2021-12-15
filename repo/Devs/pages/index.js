@@ -44,7 +44,7 @@ const Page = () => {
 				<Heading as="h3" variant="section-title">
 					Sobre
 				</Heading>
-				<Paragraph>Lucas é um iniciante e apaixonado pelo mundo da programação, e que pretende viver dela. Atualmente ele trabalha como Assistente de Cadastro, mas não deixa a programação de lado, especialmente em suas macros no excel.</Paragraph>
+				<Paragraph>Lucas é um iniciante e apaixonado pelo universo da programação, e que pretende viver dela. Atualmente ele trabalha como Assistente de Cadastro, mas busca uma transição de carreira imediatamente!</Paragraph>
 			<Box align="center" my={4}>
 				<NextLink href="/trabalhos">
 					<Button rightIcon={<ChevronRightIcon/>} colorScheme="gray">

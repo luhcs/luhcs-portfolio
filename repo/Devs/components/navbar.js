@@ -16,15 +16,19 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
-const LinkItem = ({ href, path, children }) => {
+import { IoLogoGithub } from 'react-icons/io5'
+
+const LinkItem = ({ href, path, _target, children, ...props }) => {
     const active = path === href
     const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
     return (
-        <NextLink href={href}>
+        <NextLink href={href} passHref>
             <Link
                 p={2}
                 bg={active ? 'glassTeal' : undefined}
                 color={active ? '#202023' : inactiveColor}
+                _target={_target}
+                {...props}
             >
                 {children}
             </Link>
@@ -58,6 +62,7 @@ const Navbar = props => {
                         <Logo />
                     </Heading>
                 </Flex>
+
                 <Stack
                     direction={{ base: 'column', md: 'row' }}
                     display={{ base: 'none', md: 'flex' }}
@@ -71,6 +76,18 @@ const Navbar = props => {
                     </LinkItem>
                     <LinkItem href="/publicacoes" path={path}>
                         Publicações
+                    </LinkItem>
+                    <LinkItem
+                    _target="blank"
+                    href="https://github.com/luhcs/luhcs-homepage"
+                    path={path}
+                    display="inline-flex"
+                    alignItems="center"
+                    style={{ gap:4 }}
+                    pl={2}
+                    >
+                    <IoLogoGithub />
+                    Source
                     </LinkItem>
                 </Stack>
 
@@ -95,6 +112,12 @@ const Navbar = props => {
                             <NextLink href="/publicacoes" passHref>
                                 <MenuItem as={Link}>Publicações</MenuItem>
                             </NextLink>
+                            <MenuItem
+                                as={Link}
+                                href="https://github.com/luhcs/luhcs-homepage"
+                            >
+                                View Source
+                            </MenuItem>
                         </MenuList>
                     </Menu>
                     </Box>
