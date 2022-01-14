@@ -1,18 +1,25 @@
 import { Container, Box, Heading, Image, useColorModeValue, Button, Link } from '@chakra-ui/react'
 import Section from '../components/section'
+import Layout from '../components/layouts/article'
 import Paragraph from '../components/paragraph'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import NextLink from 'next/link'
+import useTranslation from 'next-translate/useTranslation'
 const Page = () => {
+
+	let { t } = useTranslation();
+
 	return (
+		<Layout>
 		<Container>
+			<Box p={4}/>
 			<Box 
 			borderRadius="lg" 
 			bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} 
 			p={3} 
 			mb={6} 
 			align="center">
-				Olá, seja bem vindo ao meu portfolio! :)
+				{t("common:greeting")}
 			</Box>
 
 			<Box display={{ md: 'flex' }}>
@@ -20,7 +27,7 @@ const Page = () => {
 					<Heading as="h2" variant="page-title">
 						Lucas F. Gomes
 					</Heading>
-					<p>Aprendiz de programação (Estudante de Analise e Desenvolvimento de Sistemas / Economia)</p>
+					<p>{t("common:profile")}</p>
 				</Box>
 				<Box flexShrink={0}
 					mt={{ base: 4, md: 0 }}
@@ -42,18 +49,19 @@ const Page = () => {
 
 			<Section delay={0.1}>
 				<Heading as="h3" variant="section-title">
-					Sobre
+					{t("common:about")}
 				</Heading>
-				<Paragraph>Lucas é um iniciante e apaixonado pelo universo da programação, e que pretende viver dela. Atualmente ele trabalha como Assistente de Cadastro, mas busca uma transição de carreira imediatamente!</Paragraph>
+				<Paragraph>{t("common:intro")}</Paragraph>
 			<Box align="center" my={4}>
 				<NextLink href="/trabalhos">
 					<Button rightIcon={<ChevronRightIcon/>} colorScheme="gray">
-						Meu portfolio
+						{t("common:portfbutton")}
 					</Button>
 				</NextLink>
 			</Box>
 			</Section>
 		</Container>
+		</Layout>
 	)
 }
 

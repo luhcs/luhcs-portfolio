@@ -7,12 +7,16 @@ import {
     Divider,
     Button
 } from '@chakra-ui/react'
+import useTranslation from 'next-translate/useTranslation'
 
 const NotFound = () => {
+
+    let { t } = useTranslation();
+
     return (
         <Container>
             <Heading as="h1">Oops..</Heading>
-            <Text>A página que você procura não foi encontrada.</Text>
+            <Text>{t("common:notfound")}</Text>
             <Divider my={6} />
 
             <Box my={6} align="center">

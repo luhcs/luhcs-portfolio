@@ -18,6 +18,7 @@ import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
 import { IoLogoGithub } from 'react-icons/io5'
 import Langmenu from './langmenu'
+import useTranslation from 'next-translate/useTranslation'
 
 const LinkItem = ({ href, path, _target, children, ...props }) => {
     const active = path === href
@@ -39,6 +40,7 @@ const LinkItem = ({ href, path, _target, children, ...props }) => {
 
 const Navbar = props => {
     const { path } = props
+    let { t } = useTranslation();
 
     return (
         <Box
@@ -73,10 +75,10 @@ const Navbar = props => {
                     mt={{ base: 4, nmd: 0 }}
                 >
                     <LinkItem href="/trabalhos" path={path}>
-                        Trabalhos
+                        {t('common:menu1')}
                     </LinkItem>
                     <LinkItem href="/publicacoes" path={path}>
-                        Publicações
+                        {t('common:menu2')}
                     </LinkItem>
                     <LinkItem
                         _target="blank"
@@ -106,13 +108,13 @@ const Navbar = props => {
                             />
                             <MenuList>
                                 <NextLink href="/" passHref>
-                                    <MenuItem as={Link}>Sobre Mim</MenuItem>
+                                    <MenuItem as={Link}>{t('common:menu3')}</MenuItem>
                                 </NextLink>
                                 <NextLink href="/trabalhos" passHref>
-                                    <MenuItem as={Link}>Trabalhos</MenuItem>
+                                    <MenuItem as={Link}>{t('common:menu1')}</MenuItem>
                                 </NextLink>
                                 <NextLink href="/publicacoes" passHref>
-                                    <MenuItem as={Link}>Publicações</MenuItem>
+                                    <MenuItem as={Link}>{t('common:menu2')}</MenuItem>
                                 </NextLink>
                                 <MenuItem
                                     as={Link}
