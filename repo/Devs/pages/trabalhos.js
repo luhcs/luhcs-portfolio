@@ -3,6 +3,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 import useTranslation from 'next-translate/useTranslation'
+import cellapreview from '../public/images/cellapreview.jpg'
 
 const Trabalhos = () => {
 
@@ -16,7 +17,7 @@ const Trabalhos = () => {
       </Heading>
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-            <p>WIP</p>
+            <WorkGridItem id="marcella" title="Marcella's Homepage" thumbnail={cellapreview}>Pagina comercial criativa e responsiva utilizando Three.JS e Vite. Estou estudando e desenvolvendo um sistema de gestão personalizado. </WorkGridItem>
         </Section>
       </SimpleGrid>
     </Container>

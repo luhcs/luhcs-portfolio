@@ -77,9 +77,9 @@ const Navbar = props => {
                     <LinkItem href="/trabalhos" path={path}>
                         {t('common:menu1')}
                     </LinkItem>
-                    <LinkItem href="/publicacoes" path={path}>
+                    { /*                   <LinkItem href="/publicacoes" path={path}>
                         {t('common:menu2')}
-                    </LinkItem>
+                    </LinkItem> */}
                     <LinkItem
                         _target="blank"
                         href="https://github.com/luhcs/luhcs-homepage"

@@ -21,7 +21,7 @@ const NotFound = () => {
 
             <Box my={6} align="center">
                 <NextLink href="/">
-                    <Button colorScheme="gray">Voltar</Button>
+                    <Button colorScheme="gray">{t("common:rhome")}</Button>
                 </NextLink>
             </Box>
         </Container>  

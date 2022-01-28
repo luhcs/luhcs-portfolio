@@ -2,6 +2,13 @@ import Head from 'next/head'
 import Navbar from '../navbar.js'
 import { Box, Container } from '@chakra-ui/react'
 import Footer from '../footer'
+import dynamic from 'next/dynamic'
+import DeloreanLoader from '../delorean-loader'
+
+const LazyDelorean = dynamic(() => import('../delorean'), {
+    ssr: false,
+    loading: () => <DeloreanLoader />
+  })
 
 const Main = ({ children, router }) => {
     return (
@@ -13,9 +20,10 @@ const Main = ({ children, router }) => {
             </Head>
 
             <Navbar path={router.asPath}/>
+            
 
             <Container maxW="container.md" pt={14}>
-                {children}
+                               {children}
             </Container>
             <Footer />
         </Box>
