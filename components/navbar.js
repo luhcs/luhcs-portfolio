@@ -113,9 +113,9 @@ const Navbar = props => {
                                 <NextLink href="/trabalhos" passHref>
                                     <MenuItem as={Link}>{t('common:menu1')}</MenuItem>
                                 </NextLink>
-                                <NextLink href="/publicacoes" passHref>
+                             {/* <NextLink href="/publicacoes" passHref>
                                     <MenuItem as={Link}>{t('common:menu2')}</MenuItem>
-                                </NextLink>
+                </NextLink>*/}
                                 <MenuItem
                                     as={Link}
                                     href="https://github.com/luhcs/luhcs-homepage"
