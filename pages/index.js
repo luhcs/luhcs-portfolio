@@ -117,7 +117,7 @@ const Page = () => {
 						I  ♥
 					</Heading>
 					<Paragraph>
-						Motorcycles, Music, Art, Retrowave, New technologies, Astronomy and all the unusual things.
+						{t('common:iluv')}
 					</Paragraph>
 				</Section>
 				<Section delay={0.3}>
