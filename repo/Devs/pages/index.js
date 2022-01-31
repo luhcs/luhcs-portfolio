@@ -31,8 +31,7 @@ const Page = () => {
 	return (
 		<Layout>
 			<Container>
-				<Box p={4} />
-				<Box
+					<Box
 					borderRadius="lg"
 					bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
 					p={3}

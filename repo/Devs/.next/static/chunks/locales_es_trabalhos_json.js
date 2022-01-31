@@ -15,7 +15,7 @@
   \***********************************/
 /***/ (function(module) {
 
-module.exports = {"title":"Trabajos"};
+module.exports = JSON.parse('{"title":"Trabajos","work":"Trabajos"}');
 
 /***/ })
 

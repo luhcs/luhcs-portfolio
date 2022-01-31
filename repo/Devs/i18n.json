@@ -3,7 +3,8 @@
     "defaultLocale": "pt-BR",
     "pages": {
         "*": ["common"] ,
-        "/trabalhos": ["trabalhos"] ,
-        "/publicacoes": ["pubs"]
+        "/works": ["trabalhos"] ,
+        "/publicacoes": ["pubs"] ,
+        "/works/marcella" : ["marcella"]
     }
 }

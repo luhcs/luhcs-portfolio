@@ -27,6 +27,14 @@ var map = {
 		"./locales/en/common.json",
 		"locales_en_common_json"
 	],
+	"./en/marcella": [
+		"./locales/en/marcella.json",
+		"locales_en_marcella_json"
+	],
+	"./en/marcella.json": [
+		"./locales/en/marcella.json",
+		"locales_en_marcella_json"
+	],
 	"./en/trabalhos": [
 		"./locales/en/trabalhos.json",
 		"locales_en_trabalhos_json"
@@ -43,6 +51,14 @@ var map = {
 		"./locales/es/common.json",
 		"locales_es_common_json"
 	],
+	"./es/marcella": [
+		"./locales/es/marcella.json",
+		"locales_es_marcella_json"
+	],
+	"./es/marcella.json": [
+		"./locales/es/marcella.json",
+		"locales_es_marcella_json"
+	],
 	"./es/trabalhos": [
 		"./locales/es/trabalhos.json",
 		"locales_es_trabalhos_json"
@@ -58,6 +74,14 @@ var map = {
 	"./pt-BR/common.json": [
 		"./locales/pt-BR/common.json",
 		"locales_pt-BR_common_json"
+	],
+	"./pt-BR/marcella": [
+		"./locales/pt-BR/marcella.json",
+		"locales_pt-BR_marcella_json"
+	],
+	"./pt-BR/marcella.json": [
+		"./locales/pt-BR/marcella.json",
+		"locales_pt-BR_marcella_json"
 	],
 	"./pt-BR/trabalhos": [
 		"./locales/pt-BR/trabalhos.json",
@@ -457,7 +481,7 @@ module.exports = require("react/jsx-dev-runtime");
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"locales":["pt-BR","en","es"],"defaultLocale":"pt-BR","pages":{"*":["common"],"/trabalhos":["trabalhos"],"/publicacoes":["pubs"]}}');
+module.exports = JSON.parse('{"locales":["pt-BR","en","es"],"defaultLocale":"pt-BR","pages":{"*":["common"],"/works":["trabalhos"],"/publicacoes":["pubs"],"/works/marcella":["marcella"]}}');
 
 /***/ })
 

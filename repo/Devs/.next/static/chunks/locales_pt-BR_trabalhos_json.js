@@ -15,7 +15,7 @@
   \**************************************/
 /***/ (function(module) {
 
-module.exports = JSON.parse('{"title":"Trabalhos"}');
+module.exports = JSON.parse('{"title":"Trabalhos","marcella1":"Pagina comercial criativa e responsiva utilizando Three.JS e Vite. Estou estudando e desenvolvendo um sistema de gestão personalizado. "}');
 
 /***/ })
 

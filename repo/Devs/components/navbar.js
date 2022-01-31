@@ -74,14 +74,14 @@ const Navbar = props => {
                     flexGrow={1}
                     mt={{ base: 4, nmd: 0 }}
                 >
-                    <LinkItem href="/trabalhos" path={path}>
+                    <LinkItem href="/works" path={path}>
                         {t('common:menu1')}
                     </LinkItem>
                     { /*                   <LinkItem href="/publicacoes" path={path}>
                         {t('common:menu2')}
                     </LinkItem> */}
                     <LinkItem
-                        _target="blank"
+                        target="_blank"
                         href="https://github.com/luhcs/luhcs-homepage"
                         path={path}
                         display="inline-flex"
