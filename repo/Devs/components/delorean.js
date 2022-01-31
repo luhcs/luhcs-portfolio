@@ -66,8 +66,15 @@ const Delorean = () => {
       camera.lookAt(target)
       setCamera(camera)
 
-      const ambientLight = new THREE.AmbientLight(0xcccccc, 1)
-      scene.add(ambientLight)
+      const directionalLight = new THREE.DirectionalLight(0x404040 , 0.5)
+      directionalLight.castShadow = true
+      directionalLight.position.set(10, 10, 3)
+
+      const directionalLight2 = new THREE.DirectionalLight(0x404040 , 0.5)
+      directionalLight2.castShadow = true
+      directionalLight2.position.set(-5.4, 10, -6)
+      
+      scene.add(directionalLight, directionalLight2)
 
       const controls = new OrbitControls(camera, renderer.domElement)
       controls.autoRotate = true
