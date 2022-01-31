@@ -1,8 +1,0 @@
-{
-  "../components/layouts/main.js -> ../delorean": {
-    "id": "../components/layouts/main.js -> ../delorean",
-    "files": [
-      "static/chunks/components_delorean_js.js"
-    ]
-  }
-}
