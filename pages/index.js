@@ -117,7 +117,7 @@ const Page = () => {
 						I  ♥
 					</Heading>
 					<Paragraph>
-						{t('common:iluv')}
+						{t("common:iluv")}
 					</Paragraph>
 				</Section>
 				<Section delay={0.3}>
