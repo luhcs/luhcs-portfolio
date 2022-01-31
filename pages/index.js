@@ -10,7 +10,6 @@ import Typewriter from 'typewriter-effect'
 import GraphemeSplitter from "grapheme-splitter"
 import { GridItem } from '../components/grid-item'
 import {
-	IoLogoTwitter,
 	IoLogoInstagram,
 	IoLogoGithub,
 	IoLogoStackoverflow,
