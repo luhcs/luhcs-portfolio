@@ -1,0 +1,9 @@
+{
+    "locales": ["pt-BR", "en","es"],
+    "defaultLocale": "pt-BR",
+    "pages": {
+        "*": ["common"] ,
+        "/trabalhos": ["trabalhos"] ,
+        "/publicacoes": ["pubs"]
+    }
+}
