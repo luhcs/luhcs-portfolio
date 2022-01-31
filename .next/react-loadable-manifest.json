@@ -1,8 +1,10 @@
 {
   "../components/layouts/main.js -> ../delorean": {
-    "id": "../components/layouts/main.js -> ../delorean",
+    "id": 2329,
     "files": [
-      "static/chunks/components_delorean_js.js"
+      "static/chunks/fb7d5399.347f6f928ae487d9.js",
+      "static/chunks/598.401c0c139899da47.js",
+      "static/chunks/329.b554801e2e1d5db0.js"
     ]
   }
 }

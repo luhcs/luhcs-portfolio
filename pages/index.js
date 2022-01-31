@@ -77,7 +77,7 @@ const Page = () => {
 					<Heading as="h3" variant="section-title">
 						{t("common:about")}
 					</Heading>
-					<Paragraph>{t("common:intro")} <Link> <a href="https://luhcs.github.io/cella-homepage" target="_blank">Marcella Franco</a></Link>.</Paragraph>
+					<Paragraph>{t("common:intro")} <Link> <a href="https://luhcs.github.io/cella-homepage" target="_blank" rel="noreferrer">Marcella Franco</a></Link>.</Paragraph>
 					<Box align="center" my={4}>
 						<NextLink href="/trabalhos">
 							<Button rightIcon={<ChevronRightIcon />} colorScheme="purple">
@@ -126,14 +126,14 @@ const Page = () => {
 					</Heading>
 					<List>
 						<ListItem>
-							<Link href="https://github.com/luhcs" target="_blank">
+							<Link href="https://github.com/luhcs" target="_blank" rel='noreferrer'>
 								<Button variant="ghost" colorScheme="purple" leftIcon={<Icon as={IoLogoGithub}/>}>
 								@luhcs
 								</Button>
 							</Link>
 						</ListItem>
 						<ListItem>
-							<Link href="https://linkedin.com/in/lgmssilva" target="_blank">
+							<Link href="https://linkedin.com/in/lgmssilva" target="_blank" rel='noreferrer'>
 								<Button variant="ghost" colorScheme="purple" leftIcon={<Icon as={IoLogoLinkedin}/>}>
 								@lgmssilva
 								</Button>
@@ -147,7 +147,7 @@ const Page = () => {
 							</Link>
 						</ListItem>
 						<ListItem>
-							<Link href="https://stackoverflow.com/users/18048214/lucas-f-gomes" target="_blank">
+							<Link href="https://stackoverflow.com/users/18048214/lucas-f-gomes" target="_blank" rel='noreferrer'>
 								<Button variant="ghost" colorScheme="purple" leftIcon={<Icon as={IoLogoStackoverflow}/>}>
 								Lucas F. Gomes
 								</Button>
