@@ -81,8 +81,8 @@ const Navbar = props => {
                         {t('common:menu2')}
                     </LinkItem> */}
                     <LinkItem
-                        _target="blank"
-                        href="https://github.com/luhcs/luhcs-homepage"
+                        target="_blank"
+                        href="https://github.com/luhcs/luhcs-portfolio"
                         path={path}
                         display="inline-flex"
                         alignItems="center"
@@ -118,7 +118,9 @@ const Navbar = props => {
                 </NextLink>*/}
                                 <MenuItem
                                     as={Link}
-                                    href="https://github.com/luhcs/luhcs-homepage"
+                                    target="_blank"
+                                    path={path}
+                                    href="https://github.com/luhcs/luhcs-portfolio"
                                 >
                                     View Source
                                 </MenuItem>

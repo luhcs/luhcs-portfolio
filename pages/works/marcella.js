@@ -8,7 +8,8 @@ import useTranslation from 'next-translate/useTranslation'
 
 
 const Work = () => {
-  const { t } = useTranslation();
+  let { t } = useTranslation();
+
 return(
   <Layout title="Marcella">
     <Container>
@@ -16,7 +17,7 @@ return(
         Marcella Franco <Badge>2022-</Badge>
       </Title>
       <P>
-       {t('marcella:desc')}
+       {t("marcella:desc")}
       </P>
       <List ml={4} my={4}>
         <ListItem>

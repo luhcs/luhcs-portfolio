@@ -4,6 +4,7 @@
     "pages": {
         "*": ["common"] ,
         "/trabalhos": ["trabalhos"] ,
+        "/works/marcella": ["marcella"],
         "/publicacoes": ["pubs"]
     }
 }
