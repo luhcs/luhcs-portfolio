@@ -22,13 +22,13 @@ return(
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://luhcs.github.io/cella-homepage" target="_blank">
-          https://luhcs.github.io/cella-homepage <ExternalLinkIcon mx="2px" />
+          <Link href="https://marcellafranco.vercel.app/" target="_blank">
+          https://marcellafranco.vercel.app/ <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
           <ListItem>
           <Meta>Stack</Meta>
-          <span>Three.JS, Javascript, HTML5, CSS3</span>
+          <span>Javascript, Bootstrap 5, HTML5, CSS3</span>
         </ListItem>
         </List>
         <WorkImage src="/images/works/marcella_01.jpg" alt="Marcella's Homepage" />
@@ -39,3 +39,4 @@ return(
 }
 
 export default Work
+//export { getServerSideProps } from '../../components/chakra'

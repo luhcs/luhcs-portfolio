@@ -1,4 +1,4 @@
-import { Container, Box, Heading, Image, useColorModeValue, List, ListItem, Button, Link, SimpleGrid, Icon } from '@chakra-ui/react'
+import { Container, Box, Heading, useColorModeValue, List, ListItem, Button, Link, SimpleGrid, Icon, chakra } from '@chakra-ui/react'
 import Section from '../components/section'
 import Layout from '../components/layouts/article'
 import Paragraph from '../components/paragraph'
@@ -15,8 +15,13 @@ import {
 	IoLogoStackoverflow,
 	IoLogoLinkedin
 } from 'react-icons/io5'
-import cellapreview from '../public/images/cellapreview.gif'
+import cellapreview from '../public/images/cellapreview.jpg'
+import Image from 'next/image'
 
+const ProfileImage = chakra(Image, {
+	shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
+  })
+  
 
 
 const Page = () => {
@@ -25,7 +30,7 @@ const Page = () => {
 
 	const stringSplitter = string => {
 		const splitter =new GraphemeSplitter();
-		return splitter.splitGraphemes(string)};
+		return splitter.splitGraphemes(string);};
 
 	return (
 		<Layout>
@@ -60,16 +65,24 @@ const Page = () => {
 						ml={{ md: 6 }}
 						align="center"
 					>
-						<Image
-							borderColor="whiteAlpha.800"
-							borderWidth={2}
-							borderStyle="solid"
-							maxWidth="100px"
-							display="inline-block"
-							borderRadius="full"
+          <Box
+            borderColor="whiteAlpha.800"
+            borderWidth={2}
+            borderStyle="solid"
+            w="100px"
+            h="100px"
+            display="inline-block"
+            borderRadius="full"
+            overflow='hidden'
+          >
+						<ProfileImage
 							src="/images/lucas.jpg"
 							alt="Imagem de Perfil"
+							borderRadius='full'
+							width="100%"
+							height="100%"
 						/>
+						</Box>
 					</Box>
 				</Box>
 
@@ -158,7 +171,7 @@ const Page = () => {
 					<Section delay={0.3}>
 						<Heading as="h3" variant="section-title">{t('common:someprojs')}</Heading>
 					<SimpleGrid columns={[1,2,2]} gap={6} >
-						<GridItem href="https://luhcs.github.io/cella-homepage" title="Marcella Franco" thumbnail={cellapreview}>{t('common:hypno')}</GridItem>
+						<GridItem href="https://marcellafranco.vercel.app/" target="_blank" title="Marcella Franco" thumbnail={cellapreview}>{t('common:hypno')}</GridItem>
 					</SimpleGrid>
 					</Section>
 			</Container>
@@ -167,3 +180,4 @@ const Page = () => {
 }
 
 export default Page
+//export { getServerSideProps } from '../components/chakra'

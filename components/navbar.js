@@ -24,11 +24,13 @@ const LinkItem = ({ href, path, _target, children, ...props }) => {
     const active = path === href
     const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
     return (
-        <NextLink href={href} passHref>
+        <NextLink href={href} passHref scroll={false}>
             <Link
                 p={2}
-                bg={active ? 'glassTeal' : undefined}
-                color={active ? '#202023' : inactiveColor}
+                bg={active ? 'none' : undefined}
+                color={active ? 'glassTeal' : inactiveColor}
+                textDecor={active ? 'underline' : undefined}
+                _focus='outline:0'
                 _target={_target}
                 {...props}
             >
@@ -77,9 +79,9 @@ const Navbar = props => {
                     <LinkItem href="/trabalhos" path={path}>
                         {t('common:menu1')}
                     </LinkItem>
-                    { /*                   <LinkItem href="/publicacoes" path={path}>
+                    <LinkItem href="/publicacoes" path={path}>
                         {t('common:menu2')}
-                    </LinkItem> */}
+                    </LinkItem>
                     <LinkItem
                         target="_blank"
                         href="https://github.com/luhcs/luhcs-portfolio"

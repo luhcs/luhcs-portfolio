@@ -4,6 +4,7 @@ import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 import useTranslation from 'next-translate/useTranslation'
 import cellapreview from '../public/images/cellapreview.jpg'
+import toruspopuppreview from '../public/images/toruspopuppreview.jpg'
 
 const Trabalhos = () => {
 
@@ -17,7 +18,8 @@ const Trabalhos = () => {
       </Heading>
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-            <WorkGridItem id="marcella" title="Marcella's Homepage" thumbnail={cellapreview}>Pagina comercial criativa e responsiva utilizando Three.JS e Vite. Estou estudando e desenvolvendo um sistema de gestão personalizado. </WorkGridItem>
+            <WorkGridItem id="marcella" title="Marcella's Homepage" thumbnail={cellapreview}>{t("marcella:desc")} </WorkGridItem>
+            <WorkGridItem id="torusint" title="Interactive TorusKnot" thumbnail={toruspopuppreview}>Exemplo de objeto 3d interativo utilizando Three.JS</WorkGridItem>
         </Section>
       </SimpleGrid>
     </Container>
