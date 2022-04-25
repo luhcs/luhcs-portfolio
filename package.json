@@ -1,6 +1,6 @@
 {
   "name": "luhcs-homepage",
-  "version": "1.0.0",
+  "version": "1.2.1",
   "description": "Sobre Lucas",
   "scripts": {
     "dev": "next dev -H 0.0.0.0",
