@@ -16,6 +16,7 @@ import {
 	IoLogoLinkedin
 } from 'react-icons/io5'
 import cellapreview from '../public/images/cellapreview.jpg'
+import toruspopuppreview from '../public/images/toruspopuppreview.jpg'
 import Image from 'next/image'
 
 const ProfileImage = chakra(Image, {
@@ -90,7 +91,7 @@ const Page = () => {
 					<Heading as="h3" variant="section-title">
 						{t("common:about")}
 					</Heading>
-					<Paragraph>{t("common:intro")} <Link> <a href="https://luhcs.github.io/cella-homepage" target="_blank" rel="noreferrer">Marcella Franco</a></Link>.</Paragraph>
+					<Paragraph>{t("common:intro")}</Paragraph>
 					<Box align="center" my={4}>
 						<NextLink href="/trabalhos">
 							<Button rightIcon={<ChevronRightIcon />} colorScheme="purple">
@@ -171,7 +172,8 @@ const Page = () => {
 					<Section delay={0.3}>
 						<Heading as="h3" variant="section-title">{t('common:someprojs')}</Heading>
 					<SimpleGrid columns={[1,2,2]} gap={6} >
-						<GridItem href="https://marcellafranco.vercel.app/" target="_blank" title="Marcella Franco" thumbnail={cellapreview}>{t('common:hypno')}</GridItem>
+						<GridItem href="https://marcellafranco.com/" target="_blank" title="Marcella Franco" thumbnail={cellapreview}>{t('common:hypno')}</GridItem>
+						<GridItem href="https://luhcs.github.io/toruspopup/" target="_blank" title="Three.JS Pop-up" thumbnail={toruspopuppreview}>{t('common:posttitle01')}</GridItem>
 					</SimpleGrid>
 					</Section>
 			</Container>

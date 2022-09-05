@@ -34,16 +34,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/publicacoes.js"
-    ],
-    "/trabalhos": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/trabalhos.js"
-    ],
-    "/works/marcella": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/works/marcella.js"
     ]
   },
   "ampFirstPages": []
